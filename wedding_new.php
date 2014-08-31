@@ -1,71 +1,6 @@
-<?php
-ob_start();
-
-session_start(); 
-$db_connect = mysql_connect("localhost", "root", "root");
-
-if (!$db_connect) {
-    die('Connexion impossible : ' . mysql_error());
-} else {
-   // echo 'Connected to MySQL';
-   // echo "  ";
-}
-
-if (!$_SESSION['user']) {
-  // echo 'no session';
-  // echo "  ";
-} else {
-  // echo 'session available';
-  // echo "  ";
-}
-
-
-$username = $_POST['username'];
-$password  = $_POST['password'];
-
-
-if (isset($username) & isset($password)) {
-    $query = sprintf("SELECT * FROM wedding.admin WHERE username='%s' AND passcode='%s'", mysql_real_escape_string($username), mysql_real_escape_string($password));
-    
-    // Exécution de la requête
-    $result = mysql_query($query);
-    $num_rows = mysql_num_rows($result);
-    
-    //echo $num_rows;
-    //echo "  ";
-    
-    // Vérification du résultat
-    // Ceci montre la requête envoyée à MySQL ainsi que l'erreur. Utile pour déboguer.
-    if ($num_rows == 0) {
-        session_destroy(); 
-        $message  = 'Invalid Request : ' . mysql_error() . "\n";
-        $message .= 'Complet Request : ' . $query;
-        die($message);
-    } else {
-    
-        while ($row = mysql_fetch_assoc($result)) {
-            //echo $row['username'];
-            //echo "  ";
-            //echo $row['passcode'];
-            // echo "  ";
-        }
-        mysql_free_result($result);
-        
-        $_SESSION['user']=$username;
-        //echo $_SESSION['user'];
-        // echo "  ";
-
-        
-       header("Location: wedding_new.php");
-       exit;
-    }
-}
-ob_end_flush();
-?>
-
 <html>
 <HEAD>
-<TITLE>LOGIN</TITLE>
+<TITLE>WEDDING</TITLE>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" href="text.css" />
@@ -76,10 +11,10 @@ ob_end_flush();
         <div class="grey">
         <div class="container_12">
         <div class="space"></div>
-        <div class="grid_12 img"><img src="img/wedding.png" alt="img" /></div>
+        <div class="grid_12 img"><img src="img/happiness.png" width="25%" height="25%" alt="img" /></div>
         <div class="grid_12"><p class="text">Ouafah et Yan se marient le 27 septembre 2014 !</p></div>
         <div class="grid_12 img"><img src="img/07.png" alt="img" /></div>
-        <div class="grid_12 img"><img src="img/06.png" alt="img" /></div>
+        <div class="grid_12 img"><img src="img/IMG1.jpg" alt="img" /></div>
         <div class="grid_12 img"><img src="img/07.png" alt="img" /></div>
         <div class="clear"></div>
         <div class="grid_5 prefix_1"><p class="text2"></p>
@@ -89,7 +24,7 @@ ob_end_flush();
         <div class="grey2">
         <div class="container_12">
         <div class="grid_12 space1"></div>
-        <div class="grid_12 img"><img src="img/tape2.png" alt="img" /></div>
+        <div class="grid_12 img"><img src="img/arabic.png" width="50%" height="50%" alt="img" /></div>
         <div class="grid_8 suffix_2 prefix_2"><p class="text4">Connectez-vous avec le nom d'utilisateur et le mot de passe que vous aviez reçu avec le faire-part !</p></div>
         <div class="grid_12 top2"></div>
         
