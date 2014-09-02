@@ -25,7 +25,7 @@ $password  = $_POST['password'];
 
 
 if (isset($username) & isset($password)) {
-    $query = sprintf("SELECT * FROM wedding.admin WHERE username='%s' AND passcode='%s'", mysql_real_escape_string($username), mysql_real_escape_string($password));
+    $query = sprintf("SELECT * FROM wedding.admin WHERE username='%s' AND passcode='%s'", mysql_real_escape_string($username),  mysql_real_escape_string($password));
     
     // Exécution de la requête
     $result = mysql_query($query);
@@ -38,9 +38,11 @@ if (isset($username) & isset($password)) {
     // Ceci montre la requête envoyée à MySQL ainsi que l'erreur. Utile pour déboguer.
     if ($num_rows == 0) {
         session_destroy(); 
-        $message  = 'Invalid Request : ' . mysql_error() . "\n";
-        $message .= 'Complet Request : ' . $query;
-        die($message);
+        header("Location: logout.php");
+        exit;
+        //$message  = 'Invalid Request : ' . mysql_error() . "\n";
+        //$message .= 'Complet Request : ' . $query;
+        //die($message);
     } else {
     
         while ($row = mysql_fetch_assoc($result)) {
@@ -56,7 +58,7 @@ if (isset($username) & isset($password)) {
         // echo "  ";
 
         
-       header("Location: wedding_new.php");
+       header("Location: wedding.php");
        exit;
     }
 }
