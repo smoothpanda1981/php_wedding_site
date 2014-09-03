@@ -26,8 +26,8 @@ if (!$_SESSION['user']) {
     exit;
 }
 
-//$db_connect = mysql_connect("localhost", "root", "root");
-$db_connect = mysql_connect("mysql-yanwangjelastic2.appengine.flow.ch", "root", "IlqNuwZAhJ");
+$db_connect = mysql_connect("localhost", "root", "root");
+//$db_connect = mysql_connect("mysql-yanwangjelastic2.appengine.flow.ch", "root", "IlqNuwZAhJ");
 
 if (!$db_connect) {
     die('Connexion impossible : ' . mysql_error());
@@ -132,25 +132,25 @@ ob_end_flush();
 <link rel="stylesheet" href="text.css" />
     <link rel="stylesheet" href="960.css" />
     
-<body bgcolor="#B3ABA8"> 
+<body bgcolor="#FF8585"> 
         <div class="top"></div>
         <div class="grey">
             <div class="container_12">
                 <div class="space"></div>
             
-                <div class="grid_12 img"><img src="img/happiness.png" width="20%" height="20%" alt="img" /></div>
+                <div class="grid_12 img"><img src="img/happiness.png" width="15%" height="15%" alt="img" /></div>
             <div class="grid_12 img"><img src="img/07.png" alt="img" /></div>    
                 
                 <div class="grid_8 suffix_2 prefix_2">
                 <p class="text2"><?php echo $acc_text1 ?></p>
             </div>
             
-            <div class="grid_12 img"><img src="img/honeymoon2.jpg" alt="img" /></div>
+            <div class="grid_12 img"><img src="img/honeymoon2.jpg" alt="img" /><br><br></div>
                             <div class="grid_2 prefix_2">
                     <p class="text4"><?php echo $acc_text2 ?></p>
                 </div>
                 <div class="grid_6 suffix_2">
-                    <p class="text4"><?php echo $acc_text3 ?><br><br><font class="text3"><?php echo $acc_text4 ?></font></p>
+                    <p class="text4"><?php echo $acc_text3 ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="text3"><?php echo $acc_text4 ?></font></p>
                 </div>
                 <div class="clear"></div>
                 <div class="grid_2 prefix_2">
@@ -159,7 +159,6 @@ ob_end_flush();
                 <div class="grid_6 suffix_2">
                     <p class="text4"><b><?php echo $acc_text6 ?></b></p>
                 </div>
-                <div class="grid_12 img"><img src="img/07.png" alt="img" /></div>
 
                 <div class="clear"></div>
                 
@@ -176,19 +175,20 @@ ob_end_flush();
         <div class="container_12">
             
                             <div class="grid_12 space2"></div>
-            <div class="grid_12 img"><img src="img/arabic.png" width="20%" height="20%" alt="img" /></div>
+            
 
             
-                            <div class="grid_12 img"><img src="img/07.png" alt="img" /></div>
+                           
 
             
-                <div class="grid_12 img"><img src="img/IMG1.jpg" alt="img" /></div>
+                <div class="grid_12 img"><img src="img/IMG1.jpg" alt="img" /><br><br></div>
+                
                 <div class="clear"></div>
                 <div class="grid_5 prefix_1">
                     <p class="text4"><u><?php echo $a_title ?></u></p>
                     <p class="text4"><?php echo $a_text1 ?></p>
-                    <p class="text4"><?php echo $a_text2 ?></p>
                     <p class="text4"><?php echo $a_text3 ?></p>
+                    <p class="text4"><a href="http://www.lausanne-palace.com/fr/index.php#situation-et-acces.php" target="_blank">Plan d'accès</a></p>
                 </div>
                 <div class="grid_5 suffix_1">
                     <p class="text4"><u><?php echo $c_title ?></u></p>
@@ -198,7 +198,7 @@ ob_end_flush();
                 </div>
 
                             <div class="grid_12 img"><img src="img/07.png" alt="img" /></div>
-
+<div class="grid_12 img"><img src="img/arabic.png" width="18%" height="18%" alt="img" /></div>
             
    
             <div class="grid_2"></div>

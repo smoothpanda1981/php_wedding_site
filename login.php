@@ -2,8 +2,8 @@
 ob_start();
 
 session_start(); 
-//$db_connect = mysql_connect("localhost", "root", "root");
-$db_connect = mysql_connect("mysql-yanwangjelastic2.appengine.flow.ch", "root", "IlqNuwZAhJ");
+$db_connect = mysql_connect("localhost", "root", "root");
+//$db_connect = mysql_connect("mysql-yanwangjelastic2.appengine.flow.ch", "root", "IlqNuwZAhJ");
 
 if (!$db_connect) {
     die('Connexion impossible : ' . mysql_error());
@@ -74,7 +74,7 @@ ob_end_flush();
 <link rel="stylesheet" href="text.css" />
     <link rel="stylesheet" href="960.css" />
     
-<body bgcolor="#E6E6FA"> 
+<body bgcolor="#CFCFE1"> 
         <div class="top"></div>
         <div class="grey">
         <div class="container_12">
@@ -92,7 +92,7 @@ ob_end_flush();
         <div class="grey2">
         <div class="container_12">
         <div class="grid_12 space1"></div>
-        <div class="grid_12 img"><img src="img/tape2.png" alt="img" /></div>
+        <div class="grid_12 img"><img src="img/tape2.png" alt="img" /><br><br><br></div>
         <div class="grid_8 suffix_2 prefix_2"><p class="text4">Connectez-vous avec le nom d'utilisateur et le mot de passe que vous aviez reçu avec le faire-part !</p></div>
         <div class="grid_12 top2"></div>
         
@@ -117,7 +117,7 @@ ob_end_flush();
            </div>
         </form>   
    
-           <div class="grid_2"></div>
+           <div class="grid_2"><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
               <div class="grid_12 space3"></div>
            <div class="grid_5 prefix_1"><div class="text5">© Ouafah & Yan 2014</div></div> 
            <div class="grid_5 suffix_1"></div>

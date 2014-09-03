@@ -3,18 +3,12 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Sep 03, 2014 at 12:16 AM
+-- Generation Time: Sep 04, 2014 at 12:35 AM
 -- Server version: 5.5.38
 -- PHP Version: 5.5.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `wedding`
@@ -28,7 +22,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `account` (
 `id` int(11) NOT NULL,
-  `text1` varchar(256) NOT NULL,
+  `text1` varchar(512) NOT NULL,
   `text2` varchar(256) NOT NULL,
   `text3` varchar(256) NOT NULL,
   `text4` varchar(256) NOT NULL,
@@ -41,7 +35,7 @@ CREATE TABLE `account` (
 --
 
 INSERT INTO `account` (`id`, `text1`, `text2`, `text3`, `text4`, `text5`, `text6`) VALUES
-(1, 'Si vous souhaitez sponsoriser notre voyage de miel !', 'Compte postal :', 'PostFinance', '(YAN WANG ou OUAFAH HAMMIMOU)', 'IBAN :', 'CH89 0900 0000 1497 6993 9');
+(1, 'Voici notre liste de mariage ...<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Un voyage de rêve à Bora Bora ! ', '<u>Compte postal</u> :', 'PostFinance', '(YAN WANG ou OUAFAH HAMMIMOU)', '<u>IBAN</u> :', 'CH89 0900 0000 1497 6993 9');
 
 -- --------------------------------------------------------
 
@@ -82,7 +76,7 @@ CREATE TABLE `adresse` (
 --
 
 INSERT INTO `adresse` (`id`, `title`, `text1`, `text2`, `text3`) VALUES
-(1, 'Lausanne Palace Hôtel Adresse :', 'Rue du Grand-Chêne 7', '1003 Lausanne', 'SUISSE');
+(1, 'Lausanne Palace Hôtel', 'Rue du Grand-Chêne 7', '1003 Lausanne', 'SUISSE');
 
 -- --------------------------------------------------------
 
@@ -103,7 +97,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`id`, `title`, `text1`, `text2`, `text3`) VALUES
-(1, 'Nous contacter :', 'Tél : +41 76 223 07 58 (Yan)', 'ou', 'Tél : +41 76 615 13 93 (Ouafah)');
+(1, 'Nous contacter', 'Tél : +41 76 223 07 58 (Yan)', 'ou', 'Tél : +41 76 615 13 93 (Ouafah)');
 
 --
 -- Indexes for dumped tables
@@ -157,6 +151,3 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 ALTER TABLE `contact`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
