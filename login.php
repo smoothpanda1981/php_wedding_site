@@ -2,8 +2,8 @@
 ob_start();
 
 session_start(); 
-$db_connect = mysql_connect("localhost", "root", "root");
-//$db_connect = mysql_connect("mysql-yanwangjelastic2.appengine.flow.ch", "root", "IlqNuwZAhJ");
+//$db_connect = mysql_connect("localhost", "root", "root");
+$db_connect = mysql_connect("mysql-yanwangjelastic2.appengine.flow.ch", "root", "IlqNuwZAhJ");
 
 if (!$db_connect) {
     die('Connexion impossible : ' . mysql_error());
