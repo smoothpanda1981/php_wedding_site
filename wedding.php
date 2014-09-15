@@ -27,7 +27,7 @@ if (!$_SESSION['user']) {
 }
 
 //$db_connect = mysql_connect("localhost", "root", "root");
-$db_connect = mysql_connect("mysql-yanwangjelastic2.appengine.flow.ch", "root", "IlqNuwZAhJ");
+$db_connect = mysql_connect("mysql-ouafahyan-mariage.appengine.flow.ch", "root", "4HFsnppown");
 
 if (!$db_connect) {
     die('Connexion impossible : ' . mysql_error());
