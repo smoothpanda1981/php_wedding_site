@@ -142,7 +142,7 @@ ob_end_flush();
             <div class="grid_12 img"><img src="img/07.png" alt="img" /></div>    
                 
                 <div class="grid_8 suffix_2 prefix_2">
-                <p class="text2"><?php echo $acc_text1 ?></p>
+                <p class="text2">Voici notre liste de mariage ...<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Un voyage de rêve à Bora Bora ! </p>
             </div>
             
             <div class="grid_12 img"><img src="img/honeymoon2.jpg" alt="img" /><br><br></div>
@@ -150,7 +150,11 @@ ob_end_flush();
                     <p class="text4"><?php echo $acc_text2 ?></p>
                 </div>
                 <div class="grid_6 suffix_2">
-                    <p class="text4"><?php echo $acc_text3 ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="text3"><?php echo $acc_text4 ?></font></p>
+                    <p class="text4"><?php echo $acc_text3 ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <font class="text3">
+                            <?php echo $acc_text4 ?>
+                        </font>
+                    </p>
                 </div>
                 <div class="clear"></div>
                 <div class="grid_2 prefix_2">
@@ -185,16 +189,16 @@ ob_end_flush();
                 
                 <div class="clear"></div>
                 <div class="grid_5 prefix_1">
-                    <p class="text4"><u><?php echo $a_title ?></u></p>
-                    <p class="text4"><?php echo $a_text1 ?></p>
+                    <p class="text4"><u>Lausanne Palace Hôtel</u></p>
+                    <p class="text4">Rue du Grand-Chêne 7</p>
                     <p class="text4"><?php echo $a_text3 ?></p>
                     <p class="text4"><a href="http://www.lausanne-palace.com/fr/index.php#situation-et-acces.php" target="_blank">Plan d'accès</a></p>
                 </div>
                 <div class="grid_5 suffix_1">
                     <p class="text4"><u><?php echo $c_title ?></u></p>
-                    <p class="text4"><?php echo $c_text1 ?></p>
+                    <p class="text4">Tél : +41 76 223 07 58 (Yan)</p>
                     <p class="text4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $c_text2 ?></p>
-                    <p class="text4"><?php echo $c_text3 ?></p>
+                    <p class="text4">Tél : +41 76 615 13 93 (Ouafah)</p>
                 </div>
 
                             <div class="grid_12 img"><img src="img/07.png" alt="img" /></div>
