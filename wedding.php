@@ -196,9 +196,9 @@ ob_end_flush();
                 </div>
                 <div class="grid_5 suffix_1">
                     <p class="text4"><u><?php echo $c_title ?></u></p>
-                    <p class="text4">Tél : +41 76 223 07 58 (Yan)</p>
+                    <p class="text4">Tél : +41 78 (Lorenzo)</p>
                     <p class="text4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $c_text2 ?></p>
-                    <p class="text4">Tél : +41 76 615 13 93 (Ouafah)</p>
+                    <p class="text4">Tél : +41 76 223 07 58 ou +41 76 615 13 93</p>
                 </div>
 
                             <div class="grid_12 img"><img src="img/07.png" alt="img" /></div>
